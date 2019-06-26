@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form accept-charset="UTF-8" action="http://nickblack.pro/send.php" method="POST" name="login" target="_black">
+        <fieldset>
+            <div class="title">
+                <p><label for="fname">Ім’я<em>* </em></label><input type="text" name="fname" required></p>
+                <p><label for="sname">Прізвище</label><input type="text" name="sname"></p>
+                <p><label for="age">Вік</label><input type="number" name="age" min="1" max="100" step="1"></p>
+                <p><label for="mail">E-mail</label><input type="email" name="mail"></p>
+                <p><label for="bday">Дата народження<input type="date" name="bday"></label></p>
+                <p><label for="phone">Телефон<input type="tel" name="phone" placeholder="+380XX-XXX-XX-XX"></label></p>
+                <p><label for="mymail">Email отпимувача<em>* </em><input type="email" name="mymail" readonly required
+                            value="gritsienko.tatiana@gmail.com"></label></p>
+            </div>
+        </fieldset>
+
+        <input class="button" type="submit" value="Відправити">
+    </form>
+</body>
+
+</html>
